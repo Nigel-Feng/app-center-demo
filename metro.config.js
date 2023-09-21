@@ -1,5 +1,5 @@
 const {getDefaultConfig, mergeConfig} = require('@react-native/metro-config');
-const MetroSymlinksResolver = require('@rnx-kit/metro-resolver-symlinks');
+// const MetroSymlinksResolver = require('@rnx-kit/metro-resolver-symlinks');
 
 /**
  * Metro configuration
@@ -8,9 +8,9 @@ const MetroSymlinksResolver = require('@rnx-kit/metro-resolver-symlinks');
  * @type {import('metro-config').MetroConfig}
  */
 const config = {
-  resolver: {
-    resolveRequest: MetroSymlinksResolver(),
-  },
+//   resolver: {
+//     resolveRequest: MetroSymlinksResolver(),
+//   },
 };
 
 module.exports = mergeConfig(getDefaultConfig(__dirname), config);
