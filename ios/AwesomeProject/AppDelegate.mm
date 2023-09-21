@@ -2,6 +2,10 @@
 
 #import <React/RCTBundleURLProvider.h>
 
+#import <AppCenterReactNative.h>
+#import <AppCenterReactNativeAnalytics.h>
+#import <AppCenterReactNativeCrashes.h>
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -17,10 +21,6 @@
 
   return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
-
-#import <AppCenterReactNative.h>
-#import <AppCenterReactNativeAnalytics.h>
-#import <AppCenterReactNativeCrashes.h>
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
 {
